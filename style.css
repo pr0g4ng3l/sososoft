@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #00D1FF;
+    --oswald-font: "Oswald", sans-serif;
+    --orienta-font: "Orienta", sans-serif;
+    --pacifico-font: font-family: "Pacifico", cursive;
+}
+
+    /* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 8rem;
+    height: 7.25rem;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+}
+
+.navbar-ul > li {
+    list-style: none;
+}
+
+.navbar-ul > li > a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: var(--oswald-font);
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.navbar-ul > li > a:hover {
+    color: #0084a1;
+    border-bottom: 1px solid #0084a1;
+}
+
+.buy-button {
+    background-color: var(--main-color);
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    font-family: var(--oswald-font);
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: .4rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.buy-button:hover {
+    background-color: #0084a1;
+}
