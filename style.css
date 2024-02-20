@@ -6,9 +6,10 @@
 
 :root {
     --main-color: #00D1FF;
+    --hover-color: #0084a1;
     --oswald-font: "Oswald", sans-serif;
     --orienta-font: "Orienta", sans-serif;
-    --pacifico-font: font-family: "Pacifico", cursive;
+    --pacifico-font: "Pacifico", cursive;
 }
 
     /* Navbar */
@@ -45,8 +46,21 @@
 }
 
 .navbar-ul > li > a:hover {
-    color: #0084a1;
-    border-bottom: 1px solid #0084a1;
+    color: var(--hover-color);
+}
+
+.navbar-ul > li > a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--main-color);
+    display: block;
+    transition: all 300ms;
+}
+
+.navbar-ul > li > a:hover::after {
+    width: 100%;
+    background-color: var(--hover-color);
 }
 
 .buy-button {
@@ -64,5 +78,81 @@
 }
 
 .buy-button:hover {
-    background-color: #0084a1;
+    background-color: var(--hover-color);
+}
+
+    /* Main Section */
+
+.main-section {
+    width: 90%;
+    height: calc(100vh - 116px);
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-info {
+    position: relative;
+    bottom: 4rem;
+}
+
+.cloud {
+    width: 30rem;
+}
+
+.message-cloud {
+    color: #fff;
+    font-family: var(--pacifico-font);
+    text-align: center;
+    width: 23rem;
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+.paragraph-under-cloud {
+    color: var(--main-color);
+    font-family: var(--orienta-font);
+    font-size: 1.5rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.delivery-option {
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-guy {
+    width: 30rem;
+    display: block;
+    margin-top: 3.5rem;
+}
+
+.delivery-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: var(--oswald-font);
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.bamboo {
+    width: 20rem;
+    position: absolute;
+    left: 45rem;
+    bottom: -.8rem;
 }
