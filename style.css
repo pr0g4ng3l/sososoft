@@ -7,6 +7,7 @@
 :root {
     --main-color: #00D1FF;
     --hover-color: #6de4ff;
+    --cream-color: #EEE1D6;
     --oswald-font: "Oswald", sans-serif;
     --orienta-font: "Orienta", sans-serif;
     --pacifico-font: "Pacifico", cursive;
@@ -198,4 +199,42 @@
 
 .sheets-amount > h4 {
     margin-top: 1.8rem;
+}
+
+    /* About-Us */
+
+.about-us {
+    height: 100vh;
+    background-color: #20A6C3;
+    display: grid;
+    place-items: center;
+}
+
+.about-us-container {
+    width: 80%;
+}
+
+.info-sect-about-us {
+    display: flex;
+    align-items: center;
+    border-top: 3px solid var(--cream-color);
+    padding: 2rem;
+}
+
+.info-sect-about-us:nth-child(2) {
+    border-bottom: 3px solid var(--cream-color);
+}
+
+.about-us-paragraph {
+    color: var(--cream-color);
+    font-family: var(--orienta-font);
+    font-size: 1.8rem;
+}
+
+.toilet-papers {
+    margin-right: 2rem;
+}
+
+.delivering {
+    margin-left: 2rem;
 }
