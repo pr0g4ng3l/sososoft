@@ -247,10 +247,13 @@
 
 .contact-us {
     height: 100vh;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
 }
 
 .email-us {
@@ -287,7 +290,7 @@
 }
 
 .form-inputs {
-    height: 20rem;
+    height: 22rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr;
@@ -333,9 +336,14 @@
     border-radius: .8rem;
     font-family: var(--orienta-font);
     color: #fff;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-size: 1.4rem;
     cursor: pointer;
+    transition: .8s;
+}
+
+.email-form-button:hover {
+    background-color: var(--hover-color);
 }
 
 .phone-number-section {
@@ -360,4 +368,32 @@
     font-family: var(--orienta-font);
     font-size: 2.5rem;
     font-weight: 300;
+}
+
+.decoration {
+    height: 50rem;
+    width: 50rem;
+    position: absolute;
+    background-color: var(--main-color);
+    transform: rotate(45deg);
+    top: -35rem;
+    left: -35rem;
+}
+
+.decoration2 {
+    height: 50rem;
+    width: 50rem;
+    position: absolute;
+    background-color: var(--main-color);
+    transform: rotate(45deg);
+    top: 48rem;
+    left: 100rem;
+}
+
+    /* Responsive Design for 1300px */
+
+@media screen and (max-width: 1300px) {
+    .bamboo {
+        display: none;
+    }
 }
