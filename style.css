@@ -386,8 +386,8 @@
     position: absolute;
     background-color: var(--main-color);
     transform: rotate(45deg);
-    top: 48rem;
-    left: 100rem;
+    bottom: -35rem;
+    right: -35rem;
 }
 
     /* Responsive Design for 1300px */
