@@ -242,3 +242,122 @@
 .delivering {
     margin-left: 2rem;
 }
+
+    /* Contact Us */
+
+.contact-us {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.email-us {
+    width: 35rem;
+    height: 38rem;
+    border: 3px solid var(--main-color);
+    padding: 2rem;
+    border-radius: .8rem;
+}
+
+.email-us-title {
+    display: flex;
+    align-items: center;
+}
+
+.email-us-h2 {
+    font-family: var(--oswald-font);
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: underline solid 3px;
+}
+
+.email-us-title > img {
+    width: 4rem;
+    margin-top: 6px;
+}
+
+.email-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inputs {
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 1.5rem;
+}
+
+.form-inputs > input {
+    border: 3px solid var(--main-color);
+    padding-left: 6px;
+    border-radius: .5rem;
+    font-family: var(--orienta-font);
+    font-size: 1.3rem;
+}
+
+.form-inputs > input::placeholder{
+    color: var(--cream-color);
+}
+
+#email {
+    grid-column: span 2;
+}
+
+#message {
+    grid-column: span 2;
+    grid-row: span 2;
+    border: 3px solid var(--main-color);
+    padding: 6px 0 0 6px;
+    border-radius: .5rem;
+    font-family: var(--orienta-font);
+    font-size: 1.3rem;
+    resize: none;
+}
+
+#message::placeholder {
+    color: var(--cream-color);
+}
+
+.email-form-button {
+    background-color: var(--main-color);
+    width: 12rem;
+    height: 4rem;
+    border: none;
+    border-radius: .8rem;
+    font-family: var(--orienta-font);
+    color: #fff;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.phone-number-section {
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 12rem;
+}
+
+.phone-number {
+    color: var(--main-color);
+}
+
+.phone-number-title {
+    font-family: var(--oswald-font);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.us-phone-number {
+    font-family: var(--orienta-font);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
