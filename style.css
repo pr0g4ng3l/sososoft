@@ -376,8 +376,8 @@
     position: absolute;
     background-color: var(--main-color);
     transform: rotate(45deg);
-    top: -35rem;
-    left: -35rem;
+    top: -37rem;
+    left: -37rem;
 }
 
 .decoration2 {
@@ -386,8 +386,8 @@
     position: absolute;
     background-color: var(--main-color);
     transform: rotate(45deg);
-    bottom: -35rem;
-    right: -35rem;
+    bottom: -37rem;
+    right: -37rem;
 }
 
     /* Responsive Design for 1300px */
@@ -395,5 +395,66 @@
 @media screen and (max-width: 1300px) {
     .bamboo {
         display: none;
+    }
+}
+
+    /* Responsive Design for 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    .header {
+        height: 100vh;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .navbar-ul {
+        margin-top: 1rem;
+    }
+
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cloud {
+        margin-top: 1rem;
+    }
+
+    .delivery-option {
+        position: static;
+    }
+
+    .delivery-guy {
+        display: none;
+    }
+
+    .delivery-button {
+        margin: 0;
+    }
+
+    /* About Us */
+
+    .info-sect-about-us {
+        border: none;
+        padding: 6rem 0;
+    }
+
+    .info-sect-about-us:nth-child(2) {
+        border-top: 3px solid var(--cream-color);
+        border-bottom: none;
+    }
+
+    .about-us-paragraph {
+        font-size: 1.5rem;
     }
 }
