@@ -254,7 +254,7 @@
 
 .contact-us-container {
     height: 100vh;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -356,7 +356,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 12rem;
 }
 
 .phone-number {
@@ -396,7 +395,7 @@
     right: -37rem;
 }
 
-    /* Responsive Design for 1300px */
+    /* Responsive Design for 1400px */
 
 @media screen and (max-width: 1400px) {
     .bamboo {
@@ -404,9 +403,9 @@
     }
 }
 
-    /* Responsive Design for 768px */
+    /* Responsive Design for 1200px to 700px */
 
-@media screen and (max-width: 768px) {
+@media screen and ((max-width: 1200px) and (min-width: 700px)) {
 
     /* Header */
 
@@ -462,5 +461,25 @@
 
     .about-us-paragraph {
         font-size: 1.5rem;
+    }
+
+    .contact-us-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .phone-number-section {
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .phone-number {
+        text-align: center;
+    }
+
+    .lady-phone {
+        display: none;
     }
 }
