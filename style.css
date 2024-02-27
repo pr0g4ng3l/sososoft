@@ -85,7 +85,7 @@
     /* Main Section */
 
 .main-section {
-    width: 90%;
+    width: 80%;
     height: calc(100vh - 116px);
     margin: auto;
     display: flex;
@@ -178,7 +178,7 @@
 }
 
 .bamboo {
-    width: 20rem;
+    width: 16rem;
     position: absolute;
     left: 40%;
     bottom: -.8rem;
@@ -247,13 +247,18 @@
 
 .contact-us {
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-us-container {
+    height: 100vh;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
-    overflow: hidden;
 }
 
 .email-us {
@@ -378,6 +383,7 @@
     transform: rotate(45deg);
     top: -37rem;
     left: -37rem;
+    z-index: -10;
 }
 
 .decoration2 {
@@ -392,7 +398,7 @@
 
     /* Responsive Design for 1300px */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .bamboo {
         display: none;
     }
