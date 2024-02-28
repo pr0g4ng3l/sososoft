@@ -28,6 +28,10 @@
     height: 7.25rem;
 }
 
+.open-menu {
+    display: none;
+}
+
 .navbar-ul {
     display: flex;
     justify-content: space-around;
@@ -222,6 +226,7 @@
 }
 
 .info-sect-about-us:nth-child(2) {
+    flex-direction: row-reverse;
     border-bottom: 3px solid var(--cream-color);
 }
 
@@ -403,9 +408,9 @@
     }
 }
 
-    /* Responsive Design for 1200px to 700px */
+    /* Responsive Design for 1200px to 701px */
 
-@media screen and ((max-width: 1200px) and (min-width: 700px)) {
+@media screen and ((max-width: 1200px) and (min-width: 701px)) {
 
     /* Header */
 
@@ -433,6 +438,10 @@
 
     .cloud {
         margin-top: 1rem;
+    }
+
+    .message-cloud {
+        top: 11.5rem;
     }
 
     .delivery-option {
@@ -477,6 +486,120 @@
 
     .phone-number {
         text-align: center;
+    }
+
+    .lady-phone {
+        display: none;
+    }
+}
+
+    /* Responsive Desing for 700px to 401px */
+
+@media screen and ((max-width: 700px) and (min-width: 401px)) {
+
+    /* Header */
+
+    /* .open-menu {
+        display: block;
+    }
+
+    .navbar-ul {
+        display: none;
+    } */
+
+    .navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    .navbar-ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        align-items: end;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+
+    .cloud {
+        width: 20rem;
+    }
+
+    .message-cloud {
+        width: 17rem;
+        top: 6.6rem;
+        left: 2.2rem;
+        font-size: 1.8rem;
+    }
+
+    .paragraph-under-cloud {
+        font-size: 1.3rem;
+    }
+
+    .delivery-guy {
+        display: none;
+    }
+
+    .delivery-button {
+        background: var(--main-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 1.3rem;
+    }
+
+    .sheets-amount {
+        width: 7rem;
+        height: 6rem;
+        font-size: 1.1rem;
+    }
+
+    .sheets-amount > h4 {
+        margin: 1.8rem .3rem 0 0;
+    }
+
+    /* About Us */
+
+    .info-sect-about-us {
+        display: block;
+        border: none;
+        padding: 2rem 0;
+    }
+
+    .info-sect-about-us:nth-child(2) {
+        border-top: 3px solid var(--cream-color);
+        border-bottom: none;
+    }
+
+    .about-us-img {
+        width: 6rem;
+        float: left;
+    }
+
+    .toilet-papers {
+        margin: 0 1rem 0 0;
+    }
+
+    .delivering {
+        margin: 0 1rem 0 0;
+    }
+
+    .about-us-paragraph {
+        font-size: 1.3rem;
+    }
+
+    /* Contact Us */
+    .decoration {
+        display: none;
+    }
+
+    .decoration2 {
+        display: none;
     }
 
     .lady-phone {
