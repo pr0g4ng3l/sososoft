@@ -500,7 +500,7 @@
 
     /* Responsive Desing for 700px to 401px */
 
-@media screen and ((max-width: 700px) and (min-width: 401px)) {
+@media screen and (max-width: 700px) {
 
     /* Header */
 
@@ -712,5 +712,85 @@
 
     .lady-phone {
         display: none;
+    }
+}
+
+    /* Media Queries for under 400px */
+
+@media screen and (max-width: 400px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cloud {
+        width: 15rem;
+    }
+
+    .message-cloud {
+        width: 13rem;
+        top: 5.2rem;
+        left: 4.2rem;
+        font-size: 1.3rem;
+    }
+
+    .email-us {
+        width: 20rem;
+        height: 35rem;
+        padding: 1rem;
+    }
+
+    .form-inputs {
+        gap: 1rem;
+    }
+
+    .email-form-button {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cloud {
+        width: 25rem;
+    }
+
+    .message-cloud {
+        width: 20rem;
+        top: 8.8rem;
+        left: 5.2rem;
+        font-size: 2.2rem;
+    }
+
+    .delivery-option {
+        bottom: 8rem;
+    }
+
+    .delivery-guy {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 400px) and (max-height: 750px) {
+    .about-us-paragraph {
+        font-size: 1.2rem;
+    }
+
+    .phone-number {
+        margin-bottom: 1rem;
+    }
+
+    .phone-number-title {
+        font-size: 2rem;
+    }
+
+    .us-phone-number {
+        font-size: 1.5rem;
     }
 }
